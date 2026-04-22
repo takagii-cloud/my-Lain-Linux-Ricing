@@ -1,0 +1,32 @@
+format = """
+[╭─](#ff7a99)$username$hostname$directory$git_branch$git_status
+[╰─](#ff7a99)$character"""
+
+[username]
+show_always = true
+style_user = "bold #ff7a99"
+format = "[$user]($style) "
+
+[hostname]
+ssh_only = false
+style = "bold #e8c4bb"
+format = "on [$hostname]($style) "
+
+[directory]
+style = "bold #ff8ba6"
+truncation_length = 3
+truncate_to_repo = false
+format = "in [$path]($style) "
+
+[git_branch]
+symbol = " "
+style = "bold #ffe099"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold #ff5774"
+format = "[$all_status$ahead_behind]($style) "
+
+[character]
+success_symbol = "[λ](bold #ff7a99)"
+error_symbol = "[λ](bold #ff5774)"
