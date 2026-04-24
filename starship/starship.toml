@@ -5,12 +5,12 @@ format = """
 [username]
 show_always = true
 style_user = "bold #ff7a99"
-format = "[$user]($style) "
+format = "[$user]($style)"
 
 [hostname]
 ssh_only = false
-style = "bold #e8c4bb"
-format = "on [$hostname]($style) "
+style = "bold #e80025"
+format = "[@](bold white)[$hostname]($style) "
 
 [directory]
 style = "bold #ff8ba6"
@@ -21,7 +21,7 @@ format = "in [$path]($style) "
 [git_branch]
 symbol = " "
 style = "bold #ffe099"
-format = "on [$symbol$branch]($style) "
+format = "@ [$symbol$branch]($style) "
 
 [git_status]
 style = "bold #ff5774"
